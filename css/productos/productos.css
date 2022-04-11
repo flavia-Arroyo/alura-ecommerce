@@ -1,0 +1,61 @@
+.todos__productos{
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding:64px;
+    
+}
+
+    .starwars, .consolas, .diversos{
+        padding:2rem;
+    }
+
+
+    .titulo{
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        margin:2rem;
+    }
+
+        .vertodo{
+            display: flex;
+        }
+        .titulo a{
+            color:blue;
+            padding-right: 1rem;
+        }
+        .flecha{
+            height: 19px;
+        }
+    
+    .productos{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+        .producto{
+            
+            width: 12%;
+            height: 250px;
+            margin:10px;
+        }
+            .producto img{
+                width: 100%;
+            }
+            .descprod{
+                height: 20px;
+                font-size: 1em;
+                padding-bottom:10px;
+            }
+            
+
+            .producto a{
+                color:blue;
+                text-decoration: none;
+            }
+
+    
+        

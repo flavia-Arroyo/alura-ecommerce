@@ -1,0 +1,49 @@
+.contacto{
+    width: 100vw;
+    display: flex;
+    height: 350px;
+    padding:64px;
+    background: #eaf2fd;
+}
+    .logoempresa{
+        width: 20%;
+    }
+
+    .links{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .links a{
+        text-decoration: none;
+        color:black;
+        padding:1.3rem;
+        
+    }
+
+    .form{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .form h2, form input{
+            padding:1.30rem;
+        }
+        .form input{
+            margin-bottom: 1.5rem;
+            height: 56px;
+        }
+        .form .mje{
+            height: 82px;
+        }
+
+        .enviar{
+            background: #2a7ae4;
+            color:#eaf2fd;
+            width: 30%;
+            padding:1rem
+        }
+        

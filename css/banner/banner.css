@@ -1,0 +1,26 @@
+.banner{
+    display: flex;
+    
+    margin-top: 72px;
+}
+.img-banner{
+    width: 100vw;
+    object-fit: cover;
+    height: calc(70vh - 94px);
+    text-align: center;
+}
+
+.descripcion-banner{
+    width: 50%;
+    color:white;
+    position: absolute;
+    padding-top: 10rem;
+    padding-left: 2rem;
+
+
+}
+.btnconsola{
+    background: blue;
+    color: white;
+    padding:12px;
+}
