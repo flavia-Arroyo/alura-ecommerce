@@ -1,6 +1,6 @@
 .banner{
     display: flex;
-    
+    box-sizing: border-box;
     margin-top: 72px;
 }
 .img-banner{

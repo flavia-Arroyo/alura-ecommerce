@@ -1,9 +1,10 @@
 .contacto{
-    
+    width: 100vw;
     display: flex;
     height: 350px;
     padding:64px;
     background: #eaf2fd;
+    box-sizing: border-box;
 }
     .logoempresa{
         width: 20%;
