@@ -25,6 +25,7 @@
     
     color:white;
     height: 30vh;
+    box-sizing: border-box;
 }
 
     .descripcion-banner h1{
@@ -52,16 +53,19 @@
     @media screen and (max-width:380px){
         .descripcion-banner{
             height: 20vh;
+            box-sizing: border-box;
+
 
         }
             .descripcion-banner h1{
-                font-size: 2.4rem;
+                font-size: 2rem;
             }
             .descripcion-banner h2{
                 font-size: 1.1rem;
             }
             .btnconsola{
                 width: 50%;
+                height: auto;
             }
 
 

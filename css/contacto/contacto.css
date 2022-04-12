@@ -85,13 +85,13 @@
         @media screen and (max-width:380px) {
             .contacto{
                 flex-direction: column;
-                height: 80vh;
+                height: 100vh;
                 box-sizing: border-box;
                 
             }
 
                 .movilcontacto{
-                    width: 100vw;
+                    width: 80vw;
                     text-align: center;
                 }
                     .logoempresa{
