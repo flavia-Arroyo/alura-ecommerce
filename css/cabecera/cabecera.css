@@ -71,6 +71,7 @@
         flex-direction: column;
         width: 100vw;
         margin:1rem;
+        box-sizing: border-box;
         
     }
         .logo-movil{

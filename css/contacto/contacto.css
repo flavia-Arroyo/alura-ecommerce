@@ -6,14 +6,23 @@
     background: #eaf2fd;
     box-sizing: border-box;
 }
+
+
+.movilcontacto{
+    display: flex;
+    width: 50vw;
+    box-sizing: border-box;
+}
     .logoempresa{
-        width: 20%;
+        width: 50%;
+        box-sizing: border-box;
     }
 
     .links{
         width: 30%;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
 
     }
 
@@ -37,9 +46,11 @@
         .form input{
             margin-bottom: 1.5rem;
             height: 56px;
+            box-sizing: border-box;
         }
         .form .mje{
             height: 82px;
+            box-sizing: border-box;
         }
 
         .enviar{
@@ -47,5 +58,58 @@
             color:#eaf2fd;
             width: 30%;
             padding:1rem
+        }
+
+
+
+
+        @media screen and (max-width:768px) {
+            .contacto{
+                padding:15px;
+            }
+            .movilcontacto{
+                flex-direction: column;
+            }
+            .links{
+                width: 70%;
+            }
+            .form{
+                height: 70%;
+            }
+                .enviar{
+                    width: 70%;
+                }
+            
+        }
+        
+        @media screen and (max-width:380px) {
+            .contacto{
+                flex-direction: column;
+                height: 80vh;
+                box-sizing: border-box;
+                
+            }
+
+                .movilcontacto{
+                    width: 100vw;
+                    text-align: center;
+                }
+                    .logoempresa{
+                        width: 90vw;
+                        box-sizing: border-box;
+                    }
+                        .logo{
+                            width: 70%;
+                        }
+                        .links{
+                            width: 100%;
+                            box-sizing: border-box;
+                        }
+
+            .form{
+                width: 90vw;
+            }
+
+            
         }
         

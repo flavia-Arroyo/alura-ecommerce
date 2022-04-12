@@ -1,4 +1,7 @@
 .banner{
+    width: 100vw;
+    min-width: 200px;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -10,9 +13,7 @@
     justify-content: flex-end;
     padding-left: 2rem;
     padding-bottom: 1rem;
-    width: 100vw;
-    min-width: 200px;
-    height: 50vh;
+   
     gap:5rem;
 
 
@@ -36,12 +37,32 @@
         padding: 1rem .2rem;
     }
     .btnconsola{
-        box-sizing: border-box;
         width: 20%;
+        height: 20%;
+        box-sizing: border-box;
         background: #2a7ae4;
         color: white;
-        padding:1.78rem;
+        padding:.3rem;
         text-align: center;
         border: 1px solid #2a7ae4;
         font-size: 1.3rem;
+        
+    }
+
+    @media screen and (max-width:380px){
+        .descripcion-banner{
+            height: 20vh;
+
+        }
+            .descripcion-banner h1{
+                font-size: 2.4rem;
+            }
+            .descripcion-banner h2{
+                font-size: 1.1rem;
+            }
+            .btnconsola{
+                width: 50%;
+            }
+
+
     }
