@@ -43,10 +43,11 @@
         box-sizing: border-box;
         background: #2a7ae4;
         color: white;
-        padding:.3rem;
+        padding:1rem;
         text-align: center;
         border: 1px solid #2a7ae4;
         font-size: 1.3rem;
+        text-decoration: none;
         
     }
 

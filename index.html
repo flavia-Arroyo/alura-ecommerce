@@ -47,7 +47,7 @@
         <div class="descripcion-banner">
             <h1>Abril Promocional</h1>
             <h2>Productos Seleccionados con 33% de descuento</h2>
-            <button class="btnconsola">Ver Consola</button>
+            <a href="#consola" class="btnconsola">Ver Consola</a>
 
         </div>
         
@@ -103,6 +103,7 @@
                 </div>
             </div>
         </section>
+        <a name="consola"></a>
         <section class="consolas">
             <div class="titulo">
                 <h2>Consolas</h2>
@@ -225,8 +226,8 @@
         </div>
         <form class="form">
             <h3>Hable con nosotros</h3>
-            <input type="text" placeholder="Nombre" >
-            <input class="mje" type="text" placeholder="Escribe tu mensaje">
+            <input class="nombre"type="text" placeholder="Nombre" maxlength="40" required >
+            <input class="mje" type="text" placeholder="Escribe tu mensaje" maxlength="120" required>
             <button type="button" class="enviar">Enviar Mensaje</button>
 
         </form>
