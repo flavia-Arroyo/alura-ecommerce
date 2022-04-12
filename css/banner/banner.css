@@ -1,28 +1,47 @@
 .banner{
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     margin-top: 72px;
-}
-.img-banner{
+    background: url('../../imagenes/img-header/banner-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: flex-end;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
     width: 100vw;
-    object-fit: cover;
-    height: calc(70vh - 94px);
-    text-align: center;
-    box-sizing: border-box;
-    
+    min-width: 200px;
+    height: 50vh;
+    gap:5rem;
+
+
+
 }
+
 
 .descripcion-banner{
-    width: 50%;
+    
     color:white;
-    position: absolute;
-    padding-top: 10rem;
-    padding-left: 2rem;
-
-
+    height: 30vh;
 }
-.btnconsola{
-    background: blue;
-    color: white;
-    padding:12px;
-}
+
+    .descripcion-banner h1{
+        font-size: 4rem;
+    }
+    .descripcion-banner h2{
+        font-weight: 400;
+        font-size: 1.5rem;
+        height: 20%;
+        padding: 1rem .2rem;
+    }
+    .btnconsola{
+        box-sizing: border-box;
+        width: 20%;
+        background: #2a7ae4;
+        color: white;
+        padding:1.78rem;
+        text-align: center;
+        border: 1px solid #2a7ae4;
+        font-size: 1.3rem;
+    }
