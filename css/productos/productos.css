@@ -10,8 +10,8 @@
 }
 
     .starwars, .consolas, .diversos{
+        
         padding:2rem;
-        margin:2rem;
         
         box-sizing: content-box;
     }

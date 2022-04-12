@@ -1,0 +1,31 @@
+.todoproducto{
+    padding-top: 200px;
+    width: 100vw;
+    box-sizing: border-box;
+
+}
+    .encabezado{
+        display: flex;
+        justify-content: space-between;
+        padding:2rem;
+        align-items: center;
+    }
+        .encabezado h2{
+            width: 70%;
+            font-size: 30px;
+        }
+
+        .agregarproducto{
+            background: #2a7ae4;
+            color:#ffffff;
+            padding:1.2rem;
+
+
+        }
+
+    .producto img{
+        background: url(../../imagenes/eliminar.png);
+        background: url(../../imagenes/modificar.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
