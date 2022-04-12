@@ -8,6 +8,7 @@
     object-fit: cover;
     height: calc(70vh - 94px);
     text-align: center;
+    box-sizing: border-box;
     
 }
 
