@@ -53,6 +53,9 @@
         color:blue;
         border-color: blue;
         padding:0.8rem;
+        text-decoration: none;
+        border:2px solid blue;
+        text-align: center;
     }
 .cabecera-movil{
     display: none;

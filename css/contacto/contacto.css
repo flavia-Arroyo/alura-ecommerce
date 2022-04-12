@@ -85,8 +85,8 @@
         @media screen and (max-width:380px) {
             .contacto{
                 flex-direction: column;
-                height: 100vh;
                 box-sizing: border-box;
+                height: 700px;
                 
             }
 
