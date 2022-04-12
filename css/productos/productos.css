@@ -28,6 +28,7 @@
         .titulo a{
             color:blue;
             padding-right: 1rem;
+            text-decoration: none;
         }
         .flecha{
             height: 19px;
