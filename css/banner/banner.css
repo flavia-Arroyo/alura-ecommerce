@@ -63,10 +63,15 @@
             }
             .descripcion-banner h2{
                 font-size: 1.1rem;
+                margin:1rem 0;
+                padding:0.5rem 0;
+               
             }
             .btnconsola{
                 width: 50%;
                 height: auto;
+                padding:0.2rem 0;
+
             }
 
 
