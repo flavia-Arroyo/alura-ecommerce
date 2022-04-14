@@ -91,6 +91,7 @@
 
     }
     .descprod{
+        width: 80vw;
         color:#a2a2a2;
         padding:1rem;
         border:transparent;
@@ -107,7 +108,7 @@
 
     .agregar{
         margin:1rem 0;
-        width: 100%;
+        width: 80vw;
         height: 51px;
         
         background: #2a7ae4;
@@ -118,6 +119,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
+        box-sizing: border-box;
 
     }
 
