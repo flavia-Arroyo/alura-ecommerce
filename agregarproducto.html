@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura</title>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="./css/reset.css" rel="stylesheet" />
+        <link href="./css/normalize.css"rel="stylesheet" />
+        <link href="./css/bases.css" rel="stylesheet" />
+        
+        
+        <link href="./css/cabecera/cabecera.css" rel="stylesheet" />
+        <link href="./css/login/login.css" rel="stylesheet" />
+        <link href="./css/contacto/contacto.css" rel="stylesheet" />
+        <link href="./css/footer/footer.css" rel="stylesheet" />
+        <link href="./css/agregarproducto/agregar.css"rel="stylesheet" />
+
+    </head>
+    <body>
+        <header class="cabecera">
+            <div class="header__cabecera">
+                <div class="header-logo">
+                    <img class="logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                
+                    <input class="text-input" type="text"placeholder="¿Que deseas buscar?">
+                </div>
+
+                <a href="login.html" class="btn">Login</a>
+            </div>        
+            
+            <div class="cabecera-movil">
+                <div class="logo-movil">
+                    <img class="logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                    <button class="btn">Login</button>
+                    <button type="button" class="lupa-movil"><img  src="./css/cabecera/lupa.png"></button>
+
+                </div>          
+                
+                <div class="buscador"> 
+                    <input class="text-input" type="text"placeholder="¿Que deseas buscar?">               
+                                    
+                </div>   
+                
+
+            </div>
+        </header>
+
+        <main>
+            <section class="contenedor">
+                
+                <h1>Agregar nuevo producto</h1>
+                <div class="agregar-movil">
+                    <a><img class="img-movil" src="./imagenes/agregar-movil.png"></a> 
+                    <p class="textoMovil-agregar">Agregar una imagen para el producto</p>
+                </div>
+                    
+                <div class="seccionImagen oculto">
+                    <div class="imagen-blanco">
+                        <img class="img"src="./imagenes/agregar-prod.png" alt="imagen agregar">
+                        <p class="desc-agregar">Arrastre para agregar una imagen para el producto </p>
+                        <img src="./imagenes/O.png oculto" >
+                        <a class="link-agregar" href="#">Busque en su computador</a>
+        
+                    </div>
+                    
+
+
+                </div>
+                        
+
+                <form class="formAgregar">
+                    <div class="input">
+                        <input class="inputdoble" type="text" placeholder="Producto XXY" >
+                        <div class="textodob">
+                            <p>Nombre del producto</p>
+
+                        </div>
+
+                    </div>
+                    <div class="input">
+                        <input class="inputdoble" type="text" placeholder="$60,00" >
+                        <div class="textodob">
+                            <p>Precio del producto</p>
+
+                        </div>
+
+                    </div>
+                    <textarea class="descprod" cols ="33" rows="3" id="mensaje" placeholder="Descripcion del producto" required></textarea>
+                    
+                    <input type="submit" value ="Agregar producto" class="agregar">
+
+                </form>
+                
+                
+
+            </section>
+
+        
+            <section class="contacto">
+                <div class="movilcontacto">
+                    <div class="logoempresa">
+                        <img class="logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                    </div>
+                    <div class="links">
+                        <a href="#">Quienes Somos</a>
+                        <a href="#">Politica Provacidad</a>
+                        <a href="#">Programa de fidelidad</a>
+                        <a href="#">Nuestras Tiendas</a>
+                        <a href="#">Quiero ser franquiciado</a>
+                        <a href="#">Anuncie aqui</a>
+
+                    </div>
+                </div>
+                <form class="form">
+                    <h3>Hable con nosotros</h3>
+                    <input class="nombre"type="text" placeholder="Nombre" maxlength="40" required >
+                    <input class="mje" type="text" placeholder="Escribe tu mensaje" maxlength="120" required>
+                    <input type="submit" value ="Enviar Mensaje" class="enviar">
+
+                </form>
+
+
+            </section>
+        
+
+        
+
+        </main>
+
+        <footer class="piepagina">
+            <p>Desarrollado por Arroyo Flavia Elizabeth </p>
+            <p>2022</p>
+
+        </footer>
+        <script type="text/javascript" src="visual.js"></script>
+        
+    </body>
+
+</html>
