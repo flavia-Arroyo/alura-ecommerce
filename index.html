@@ -10,7 +10,7 @@
     <link href="./css/normalize.css"rel="stylesheet" />
     <link href="./css/bases.css" rel="stylesheet" />
     
-    
+    <link href="./css/agregarproducto/agregar.css" rel="stylesheet" />
     <link href="./css/cabecera/cabecera.css" rel="stylesheet" />
     <link href="./css/banner/banner.css" rel="stylesheet" />
     <link href="./css/productos/productos.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
             <a href="login.html" class="btn">Login</a>
         </div>        
         
-        <div class="movil">
+        <div class="cabecera-movil">
             <div class="logo-movil">
                 <img class="logo" src="./imagenes/img-header/Logo.png" alt="logo">
                 <a href="login.html" class="btn">Login</a>
@@ -230,8 +230,13 @@
         </div>
         <form class="form">
             <h3>Hable con nosotros</h3>
-            <input class="nombre"type="text" placeholder="Nombre" maxlength="40" required >
-            <input class="mje" type="text" placeholder="Escribe tu mensaje" maxlength="120" required>
+            <div class="input">
+                <input class="inputdoble"type="text" placeholder="André Lisboa" maxlength="40" required >
+                <p class="textodob">Nombre</p>
+
+            </div>
+                
+            <textarea class="desc" type="text" placeholder="Escribe tu mensaje" maxlength="120" required></textarea>
             <input type="submit" value ="Enviar Mensaje" class="enviar">
 
         </form>

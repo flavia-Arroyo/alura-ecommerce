@@ -35,9 +35,7 @@
             
             
         }
-            .img-movil{
-                
-            }
+            
             
             .oculto{
                 display:none;
@@ -165,7 +163,7 @@
         margin-left: 1rem;
         box-sizing: border-box;
     }
-    .descprod{
+    .descprod, .agregar{
         width: 92vw;
     }
 
@@ -183,12 +181,9 @@
     .desc-agregar{
         width: 15vw;
     }
-    .descprod{
+    .descprod, .agregar{
         width: 40vw;
     }
+    
 
 }
-
-
-
-            
