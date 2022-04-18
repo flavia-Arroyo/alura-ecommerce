@@ -1,0 +1,146 @@
+
+/*version movil*/
+.cabecera{
+    background:#ffffff;
+    display: flex;
+    align-items: center;
+    
+    position: fixed;
+    width: 100vw;
+    z-index: 999999;
+    top:0;
+    box-sizing: border-box;
+    
+}
+
+.header__cabecera{
+    display:none;
+}
+
+.cabecera-movil{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:1rem;
+    box-sizing: border-box;
+
+}
+
+    .logo-movil{
+        display: flex;
+        justify-content: space-between;
+    }
+        
+        .cabecera-movil-logo{
+            width: 100px;
+        }
+        .login-btn{
+            width: calc(30vw - 2rem);
+            max-width: 182px;
+            border: 1px solid #2A7AE4;
+            padding:0.6rem 1rem;
+            color: #2A7AE4;
+            font-weight: 600;
+            font-size: .8rem;
+            line-height: 1rem;
+            margin:0 0.7rem;
+            text-align: center;
+            box-sizing: border-box;
+        }  
+
+
+
+        .lupa-movil{
+            width: 20%;
+            border:none;
+            background:none;
+
+        }
+
+        .buscador{
+            display: none;
+            margin:1rem;
+        } 
+        .text-input{
+            font-family: 'Raleway';
+            font-style: normal;
+            font-size: 14px;
+            align-items: center;
+            line-height: 16px;
+            border-radius: 20px;
+            border: none;
+            background: #f5f5f5;
+            padding: 1rem 2rem;
+            
+            width: 100%;
+            max-width: 393px;
+            box-sizing: border-box;
+        }
+        .text-input::placeholder{
+            background-image: url(../imagenes/lupa.png);
+            background-repeat:no-repeat ;
+            background-position: right center;
+            
+            
+        
+        }
+
+    
+    
+
+/*
+
+@media screen  and (min-width: 760px){
+    .cabecera-movil{
+        display:none
+        
+    }
+        
+    .header__cabecera{
+        
+        align-items: center;
+        align-content: center;
+        display: flex;
+        width: 100vw;
+        padding:1rem 2rem;
+        
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .header-logo{
+        display: flex;
+        width: calc(80vw - 4rem);
+        align-items:center;
+        
+    }
+    .login-btn {
+        width: calc(30vw - 4rem);
+    }
+    .text-input{
+        width: calc(50vw - 4rem);
+        margin-left: 1rem;
+    }
+   
+    
+
+    @media screen  and (min-width: 1040px){
+        .cabecera-logo{
+            padding-right: 1rem;
+            height: 3rem;
+            box-sizing: border-box;
+    
+        }
+        
+    }
+ 
+
+    
+    
+        
+    
+   
+            
+
+
+} ;
+ 

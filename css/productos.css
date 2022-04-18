@@ -1,0 +1,145 @@
+.todos__productos{
+    width: 100vw;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    
+    box-sizing: border-box;
+    
+    
+}
+
+    .starwars, .consolas, .diversos{
+        padding:1rem 0;  
+        box-sizing: border-box;    
+        
+    }
+
+
+    .titulo{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:1rem;
+        box-sizing: border-box;
+    }
+        .titulo h2{
+            font-weight: 700;
+            font-size: 1.5rem;
+            color:#464646;
+            
+        }
+
+        
+        .producto-link{
+            color:#2a7ae4;
+            padding-right: .4rem;
+            
+            gap: 0.2rem;
+            font-weight: 700;
+            line-height: .8rem;
+            width: 40%;
+            font-style: normal;
+            font-size: .95rem;
+            box-sizing: border-box;
+            
+        }
+
+        .flecha{
+            height: 12px;
+        }
+        
+    
+    .productos{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        box-sizing: border-box;
+        
+    }
+        .producto{
+            width: 42%;
+            max-width: 170px;
+            margin-bottom: 1.5rem;
+            margin-right: .2rem;
+            
+            box-sizing: border-box;
+        }
+            .prodImagen{
+                width: 100%;
+                max-width: 176px;
+                height: 174px;;
+                box-sizing: border-box;
+            }
+            .nomprod{
+                font-size: .8rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1rem;
+                margin: 0.3rem 0;
+            }
+            .precioprod{
+                font-weight: 700;
+                font-size: 1rem;
+                line-height: .06rem;
+                color:#464646;
+
+            }
+            
+
+            .producto a{
+                color: #2a7ae4;
+                font-style: normal;
+                font-weight: 700;
+                font-size: .8rem;
+                line-height: 1rem;
+                
+            }
+
+            .prodoculto{
+                display: none;
+            }
+
+/*
+
+
+/*
+@media screen and (max-width:760px) {
+    .todos__productos{
+        padding:20px;
+    }
+    .titulo{
+        width: 70vw;
+        margin: 1rem;
+    }
+    .prodoculto{
+        display: none;
+    }
+    .producto{
+        width: 20%;
+    }
+    
+}
+
+@media screen and (max-width:380px) {
+    .todos__productos{
+        padding:5px;
+    }
+    .starwars, .consolas,.diversos{
+        padding:0.8rem;
+    }
+    
+    .productos{
+        width: 100vw;
+        box-sizing: border-box;
+        
+
+    }
+    .producto{
+        width: 40%;
+    }
+    
+}
+*/
+        

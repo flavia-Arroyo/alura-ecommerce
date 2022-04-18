@@ -12,21 +12,22 @@
 }
 
     .login h3{
-        font-size: 16px;
+        font-size: 1rem;
         margin-top: 4rem;
-        line-height: 19px;
+        line-height: 1.2rem;
+        font-weight: 700;
         color: #464646;
     }
     .login input{
         color:#a2a2a2;
         font-family: 'Raleway';
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
-        line-height: 19px;
+        line-height: 1.2rem;
         height: .2vh;
         border-radius: 4px;
         border: transparent;
-        width: 70vw;
+        width: calc(70vw - 2rem);
         margin:0.6rem 0;
         padding:1.3rem 0 1.3rem 0.7rem;
         box-sizing: border-box;
@@ -34,16 +35,12 @@
     }
     
     .entrar{
-        background: #2a7ae4;
-        color:#ffffff;
-        height: 7vh;
+        
         width: 30vw;
         margin-top: .7rem;
-        padding: .7rem 1rem;
-        font-family: 'Raleway';
         font-weight: 600;
-        line-height: 1rem;
-        font-size: 14px;
+        
+        
 
     }
 

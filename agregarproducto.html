@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Alura</title>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-        <link href="./css/reset.css" rel="stylesheet" />
-        <link href="./css/normalize.css"rel="stylesheet" />
-        <link href="./css/bases.css" rel="stylesheet" />
-        
-        
-        <link href="./css/cabecera/cabecera.css" rel="stylesheet" />
-        <link href="./css/login/login.css" rel="stylesheet" />
-        <link href="./css/contacto/contacto.css" rel="stylesheet" />
-        <link href="./css/footer/footer.css" rel="stylesheet" />
-        <link href="./css/agregarproducto/agregar.css"rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Greek</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/normalize.css"rel="stylesheet" />
+    <link href="./css/bases.css" rel="stylesheet" />
+    
+    <link href="./css/agregar.css" rel="stylesheet" />
+    <link href="./css/cabecera.css" rel="stylesheet" />
+    
+    <link href="./css/productos.css" rel="stylesheet" />
+    <link href="./css/contacto.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
 
-    </head>
+</head>
     <body>
         <header class="cabecera">
             <div class="header__cabecera">
                 <div class="header-logo">
-                    <img class="logo" src="./imagenes/img-header/Logo.png" alt="logo">
-                
+                    <img class="cabecera-logo" src="./imagenes/img-header/Logo.png" alt="logo">
                     <input class="text-input" type="text"placeholder="¿Que deseas buscar?">
+                    
                 </div>
 
                 <a href="login.html" class="btn">Login</a>
@@ -32,9 +32,9 @@
             
             <div class="cabecera-movil">
                 <div class="logo-movil">
-                    <img class="logo" src="./imagenes/img-header/Logo.png" alt="logo">
-                    <a href="login.html" class="btn">Login</a>
-                    <button type="button" class="lupa-movil"><img  src="./css/cabecera/lupa.png"></button>
+                    <img class="cabecera-movil-logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                    <a href="login.html" class="login-btn">Login</a>
+                    <button type="button" class="lupa-movil"><img  src="imagenes/lupa-cabecera-movil.png"></button>
 
                 </div>          
                 
@@ -46,7 +46,9 @@
 
             </div>
         </header>
-
+        
+        
+            
         <main>
             <section class="contenedor">
                 
@@ -93,7 +95,7 @@
                     </div>
                     <textarea class="descprod"  id="mensaje" placeholder="Descripcion del producto" required></textarea>
                     
-                    <input type="submit" value ="Agregar producto" class="agregar">
+                    <input type="submit" value ="Agregar producto" class="agregar btn">
 
                 </form>
                 
@@ -102,10 +104,16 @@
             </section>
 
         
-         <section class="contacto">
+        
+
+        </main>
+
+        
+        <footer >
+            <section class="contacto">
                 <div class="movilcontacto">
                     <div class="logoempresa">
-                        <img class="logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                        <img class="movilcontacto-logo" src="./imagenes/img-header/Logo.png" alt="logo">
                     </div>
                     <div class="links">
                         <a href="#">Quienes Somos</a>
@@ -114,7 +122,7 @@
                         <a href="#">Nuestras Tiendas</a>
                         <a href="#">Quiero ser franquiciado</a>
                         <a href="#">Anuncie aqui</a>
-
+        
                     </div>
                 </div>
                 <form class="form">
@@ -125,21 +133,16 @@
         
                     </div>
                     <textarea class="desc" type="text" placeholder="Escribe tu mensaje" maxlength="120" required></textarea>
-                    <input type="submit" value ="Enviar Mensaje" class="enviar">
-
+                    <input type="submit" value ="Enviar Mensaje" class="enviar btn">
+        
                 </form>
-
-
+        
+        
             </section>
-        
-        
-        
-
-        </main>
-
-        <footer class="piepagina">
-            <p>Desarrollado por Arroyo Flavia Elizabeth </p>
-            <p>2022</p>
+            <section class="piepagina">
+                <p >Desarrollado por Arroyo Flavia Elizabeth </p>
+                <p>2022</p>
+            </section>
 
         </footer>
         <script type="text/javascript" src="visual.js"></script>
