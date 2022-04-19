@@ -77,13 +77,14 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 1rem;
-                margin: 0.3rem 0;
+                margin-bottom: 0.87rem;
             }
             .precioprod{
                 font-weight: 700;
                 font-size: 1rem;
                 line-height: .06rem;
                 color:#464646;
+                margin-bottom: 0.87rem;
 
             }
             

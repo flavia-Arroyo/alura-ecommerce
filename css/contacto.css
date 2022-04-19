@@ -60,6 +60,7 @@
         
         .desc{
             width: calc(100vw - 2rem);
+            max-width: 560px;
             height: 82px;
             border:transparent;
             font-family: 'Raleway';
