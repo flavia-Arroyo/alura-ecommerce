@@ -100,7 +100,7 @@
 @media screen and (min-width:1440px) {
 
     .encabezado{
-        margin: 1rem 7rem;
+        margin: 1rem 11rem 1rem 7rem;
     }
     .encabezado h2{
         font-size: 2rem;
@@ -109,6 +109,12 @@
     .producto-mod{
         width: calc(100vw - 18rem);
         margin: 0;
+
+    }
+    .agregarproducto{
+        font-size: 1rem;
+        height: auto;
+        padding:1rem 2rem;
 
     }
     
