@@ -64,11 +64,38 @@
 
     
     @media screen and (min-width:768px){
+        .prod-seleccionado{
+            display: flex;
+            margin-top: 3rem;
+            padding: 3rem 2rem 1rem 2rem;
+            align-items: center;
+            justify-content: center;
+            
+        }
         
     }
 
 
     @media screen and (min-width:1440px){
+        .prod-sel-desc{
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+           
+        
+        }
+        
+        .prod-sel-nom{
+            font-size: 3rem;
+        }
+        .prod-sel-precio{
+            font-size: 1.8rem;
+            line-height: 1.3rem;
+        }
+        .prod-sel-similares{
+            font-size: 2rem;
+            padding:2rem;
+        }
+        
         
 
     
