@@ -68,9 +68,7 @@
         }
             .prodImagen{
                 width: 100%;
-                max-width: 176px;
-                height: 174px;;
-                box-sizing: border-box;
+                
             }
             .nomprod{
                 font-size: .8rem;
@@ -102,50 +100,40 @@
                 display: none;
             }
 
+    @media screen and (min-width:768px){
+        .productos{
+            padding-left: 1.8rem;
+            padding-right: calc(1.8rem - 0.2rem);
+        }
+        .producto{
+            width: 23%;
+            max-width: 250px;
+            
+        }
+
+    }
+
 
     @media screen and (min-width:1440px){
         .prodoculto{
             display: block;
         }
+        .todos__productos{
+            padding:2rem 7rem;
+        }
+        .producto{
+            width: 16%;
+            max-width: 250px;
+        }
+        .prodImagen{
+            height: 245px;
+            max-width: none;
+            
+        }
+        .titulo{
+            width: 85vw;
+        }
 
-    }
-
-/*
-@media screen and (max-width:760px) {
-    .todos__productos{
-        padding:20px;
-    }
-    .titulo{
-        width: 70vw;
-        margin: 1rem;
-    }
-    .prodoculto{
-        display: none;
-    }
-    .producto{
-        width: 20%;
-    }
     
-}
-
-@media screen and (max-width:380px) {
-    .todos__productos{
-        padding:5px;
-    }
-    .starwars, .consolas,.diversos{
-        padding:0.8rem;
-    }
-    
-    .productos{
-        width: 100vw;
-        box-sizing: border-box;
-        
 
     }
-    .producto{
-        width: 40%;
-    }
-    
-}
-*/
-        

@@ -106,9 +106,15 @@
             .links{
                 align-items: flex-start;
             }
-            .form, .input, .desc{
+            .form, .desc{
                 width: calc( 50vw - 3rem);
             }
+
+            .forminput{
+                width: calc( 50vw - 3rem);
+
+            }
+            
 
             
                 
@@ -130,6 +136,12 @@
 
             .links a{
                 line-height: 2.8rem;
+
+            }
+            
+            .forminput{
+                width: calc( 42vw - 3rem);
+                max-width: 560px;
 
             }
         }

@@ -44,33 +44,36 @@
         
     }
 
-    /*
+    
 
-    @media screen and (max-width:380px){
-        .descripcion-banner{
-            height: 25vh;
-            box-sizing: border-box;
+    @media screen  and (min-width: 768px){
+        .banner-titulo{
+            font-size: 3rem;
+            font-weight: 700;
+
+        }
+        .banner-destacado{
+            font-size: 1rem;
+            line-height: 1.3rem;
+            font-weight: 700;
+
+        }
+        .btnconsola{
+            width: 40%;
 
 
         }
-            .descripcion-banner h1{
-                font-size: 2rem;
-            }
-            .descripcion-banner h2{
-                font-size: 1.1rem;
-                margin:1rem 0;
-                padding:0.5rem 0;
-               
-            }
-            .btnconsola{
-                width: 50%;
-                height: auto;
-                padding:0.2rem 0;
-
-            }
+       
 
           
 
 
     }
-    */
+
+    @media screen  and (min-width: 1440px){
+        .banner{
+            height: 40vh;
+        }
+        
+    }
+    

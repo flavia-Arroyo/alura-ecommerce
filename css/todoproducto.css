@@ -44,6 +44,7 @@
        
         .imagenprod{
             width: 100%;
+            object-fit: cover;
             position: relative;
             box-sizing: border-box;
             
@@ -76,31 +77,46 @@
             padding:3px 5px;          
         }
 
-/*
-@media screen and (max-width:768px) {
-    .producto-mod{
-        margin:0;
-    }
+
+
+@media screen and (min-width:768px) {
+
     
-}
-@media screen and (max-width:380px) {
+    
     .encabezado{
-        flex-direction: column;
-        align-items:initial;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
     .encabezado h2{
-        font-size: 20px;
-
-
+        font-size: 1.7rem;
     }
-    .agregarproducto{
-        width: 40%;
-        margin:1rem 0;
-        text-align: center;
-        font-size: .9rem;
+
+
+}
+
+
+
+@media screen and (min-width:1440px) {
+
+    .encabezado{
+        margin: 1rem 7rem;
+    }
+    .encabezado h2{
+        font-size: 2rem;
+    }
+
+    .producto-mod{
+        width: calc(100vw - 18rem);
+        margin: 0;
+
     }
     
+    
 }
-*/
+    
+
+
+
 
     
