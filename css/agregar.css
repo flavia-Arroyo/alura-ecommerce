@@ -176,6 +176,7 @@
 
         .contenedor{
             padding:5rem 20rem;
+            text-align: left;
 
         }
         .imagen-blanco{
@@ -184,7 +185,11 @@
         }
         .inputablet, .descprod, .agregar{
             width: calc(60vw - 2rem);
+            
 
+        }
+        .input{
+            width: calc(60vw - 2rem);
         }
 
         
