@@ -12,7 +12,7 @@
 }
     .img-sel{
         width: 100%;
-        max-width: 560px;
+        max-width: 750px;
         object-fit: cover;
     }
 
@@ -87,6 +87,9 @@
         .prod-sel-nom{
             font-size: 3rem;
         }
+        .prod-sel-img{
+            width: calc(50vw - 4rem);
+        }
         .prod-sel-precio{
             font-size: 1.8rem;
             line-height: 1.3rem;
@@ -95,6 +98,10 @@
             font-size: 2rem;
             padding:2rem;
         }
+        .prod-sel-texto{
+            width: calc(50vw - 4rem);
+        }
+        
         
         
 

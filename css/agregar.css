@@ -142,7 +142,7 @@
             width: 60vw;
             box-sizing: border-box;
             
-            justify-content: space-around;
+            justify-content: left;
         }
         .desc-agregar{
             color: #6b6b6b;
