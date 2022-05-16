@@ -32,10 +32,11 @@ function validarLogueo(){
 
     }else{
         swal({
-            text: "El correo o Contraseña es invalido",
+            
+            text: " Debe Usar correo:adm@alura.com clave:Alura1234",
             icon: "error",
             
-            timer:2000,
+            
         })
         
         
