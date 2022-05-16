@@ -96,7 +96,11 @@
                 
             }
 
-            .prodoculto{
+            
+            .producto:nth-child(5){
+                display: none;
+            }
+            .producto:nth-child(6){
                 display: none;
             }
 
@@ -110,14 +114,19 @@
             max-width: 250px;
             
         }
+        .productos:nth-child(5){
+            display: none;
+        }
+        .productos:nth-child(6){
+            display: none;
+        }
+
 
     }
 
 
     @media screen and (min-width:1440px){
-        .prodoculto{
-            display: block;
-        }
+        
         .todos__productos{
             padding:2rem 7rem;
         }
@@ -132,6 +141,12 @@
         }
         .titulo{
             width: 85vw;
+        }
+        .producto:nth-child(5){
+            display: block;
+        }
+        .producto:nth-child(6){
+            display: block;
         }
 
     

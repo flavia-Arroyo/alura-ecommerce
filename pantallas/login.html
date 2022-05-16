@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Greek</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="./css/reset.css" rel="stylesheet" />
-    <link href="./css/normalize.css"rel="stylesheet" />
-    <link href="./css/bases.css" rel="stylesheet" />
-    <link href="./css/login.css" rel="stylesheet" />
-    <link href="./css/agregar.css" rel="stylesheet" />
-    <link href="./css/cabecera.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/normalize.css"rel="stylesheet" />
+    <link href="../css/bases.css" rel="stylesheet" />
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="../css/agregar.css" rel="stylesheet" />
+    <link href="../css/cabecera.css" rel="stylesheet" />
     
-    <link href="./css/productos.css" rel="stylesheet" />
-    <link href="./css/contacto.css" rel="stylesheet" />
-    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="../css/productos.css" rel="stylesheet" />
+    <link href="../css/contacto.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
 
 </head>
     <body>
         <header class="cabecera">
             <div class="header__cabecera">
                 <div class="header-logo">
-                    <img class="cabecera-logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                    <img class="cabecera-logo" src="../imagenes/img-header/Logo.png" alt="logo">
                     <input class="text-input" type="text"placeholder="¿Que deseas buscar?">
                     
                 </div>
@@ -32,9 +32,9 @@
             
             <div class="cabecera-movil">
                 <div class="logo-movil">
-                    <img class="cabecera-movil-logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                    <img class="cabecera-movil-logo" src="../imagenes/img-header/Logo.png" alt="logo">
                     <a href="login.html" class="login-btn">Login</a>
-                    <button type="button" class="lupa-movil"><img  src="imagenes/lupa-cabecera-movil.png"></button>
+                    <button type="button" class="lupa-movil"><img  src="../imagenes/lupa-cabecera-movil.png"></button>
 
                 </div>          
                 
@@ -50,11 +50,14 @@
         <main>
     
                 <section >
-                    <form class="login">
+                    <form class="login" data-form>
                         <h3>Iniciar Sesión</h3>
-                        <input type="email" placeholder="Escriba su correo electrónico" required>
-                        <input  type="text" placeholder="Escribe su contraseña" required>
-                        <button class="entrar btn" type="button" class="entrar">Entrar</button>
+                        <p>correo= "adm@alura.com"; 
+                            </p>
+                        <input type="email" placeholder="Escriba su correo electrónico" data-correo required>
+                        <p>clave = "Alura1234";</p>
+                        <input  type="text" placeholder="Escribe su contraseña" data-contraseña required>
+                        <button class="entrar btn" type="button" class="entrar" data-login >Entrar</button>
                     </form>
 
                 </section>
@@ -70,7 +73,7 @@
             <section class="contacto">
                 <div class="movilcontacto">
                     <div class="logoempresa">
-                        <img class="movilcontacto-logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                        <img class="movilcontacto-logo" src="../imagenes/img-header/Logo.png" alt="logo">
                     </div>
                     <div class="links">
                         <a href="#">Quienes Somos</a>
@@ -102,7 +105,13 @@
             </section>
 
         </footer>
-        <script type="text/javascript" src="visual.js"></script>
+        <script type="text/javascript" src="../javascript/visual.js"></script>
+        <script type="module" src="../controlladores/productos.js"></script>
+        <script type="text/javascript" src="../javascript/login.js"></script>
+        
+       
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     
 </body>
 

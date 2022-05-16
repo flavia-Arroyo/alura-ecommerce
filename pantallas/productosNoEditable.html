@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Greek</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="./css/reset.css" rel="stylesheet" />
-    <link href="./css/normalize.css"rel="stylesheet" />
-    <link href="./css/bases.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/normalize.css"rel="stylesheet" />
+    <link href="../css/bases.css" rel="stylesheet" />
     
-    <link href="./css/agregar.css" rel="stylesheet" />
-    <link href="./css/cabecera.css" rel="stylesheet" />
-    <link href="./css/banner.css" rel="stylesheet" />
-    <link href="./css/productos.css" rel="stylesheet" />
-    <link href="./css/contacto.css" rel="stylesheet" />
-    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="../css/agregar.css" rel="stylesheet" />
+    <link href="../css/cabecera.css" rel="stylesheet" />
+    <link href="../css/banner.css" rel="stylesheet" />
+    <link href="../css/productos.css" rel="stylesheet" />
+    <link href="../css/contacto.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
 
 </head>
     <body>
         <header class="cabecera">
             <div class="header__cabecera">
                 <div class="header-logo">
-                    <img class="cabecera-logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                    <img class="cabecera-logo" src="../imagenes/img-header/Logo.png" alt="logo">
                     <input class="text-input" type="text"placeholder="¿Que deseas buscar?">
                     
                 </div>
@@ -32,9 +32,9 @@
             
             <div class="cabecera-movil">
                 <div class="logo-movil">
-                    <img class="cabecera-movil-logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                    <img class="cabecera-movil-logo" src="../imagenes/img-header/Logo.png" alt="logo">
                     <a href="login.html" class="login-btn">Login</a>
-                    <button type="button" class="lupa-movil"><img  src="imagenes/lupa-cabecera-movil.png"></button>
+                    <button type="button" class="lupa-movil"><img  src="../imagenes/lupa-cabecera-movil.png"></button>
 
                 </div>          
                 
@@ -64,46 +64,16 @@
             <section class="todos__productos"id="todos__productos">
                 <section >
                     <div class="titulo">
-                        <h2>Star Wars</h2>
-                        <div>
-                            <a href="pantallas/productosNoEditable.html"class="producto-link">Ver Todo</a><img class="flecha" src="./imagenes/flecha1.png">
+                        <h2>Todos Los Productos</h2>
 
-                        </div>
                         
                     </div>
-                    <div class="productos"data-productos-starwars>
+                    <div class="productos"data-productos>
                         
                         
                     </div>
                 </section>
-                <section>
-                    <div class="titulo">
-                        <h2>Consolas</h2>
-                        <div>
-                            <a href="pantallas/productosNoEditable.html"class="producto-link">Ver Todo</a><img class="flecha" src="./imagenes/flecha1.png">
 
-                        </div>
-                        
-                    </div>
-                    <div class="productos"data-productos-consolas>
-                       
-                        
-                    </div>
-                </section>
-                <section>
-                    <div class="titulo">
-                        <h2>Diversos</h2>
-                        <div>
-                            <a href="pantallas/productosNoEditable.html"class="producto-link">Ver Todo</a><img class="flecha" src="./imagenes/flecha1.png">
-
-                        </div>
-                        
-                    </div>
-                    <div class="productos" data-productos-diversos>
-                       
-                        
-                    </div>
-                </section>
                 
         </main>
         
@@ -116,7 +86,7 @@
             <section class="contacto">
                 <div class="movilcontacto">
                     <div class="logoempresa">
-                        <img class="movilcontacto-logo" src="./imagenes/img-header/Logo.png" alt="logo">
+                        <img class="movilcontacto-logo" src="../imagenes/img-header/Logo.png" alt="logo">
                     </div>
                     <div class="links">
                         <a href="#">Quienes Somos</a>
@@ -150,8 +120,8 @@
         </footer>
         
         <script type="text/javascript" src="javascript/visual.js"></script>
-        <script type="module" src="./controlladores/prod-control.js"></script>
-        <script type="module" src="./controlladores/detalle-producto.js"></script>
+        <script type="module" src="../controlladores/prod-no-editable.js"></script>
+        
         
         
     </body>
