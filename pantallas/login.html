@@ -49,15 +49,39 @@
         
         <main>
     
-                <section >
-                    <form class="login" data-form>
-                        <h3>Iniciar Sesión</h3>
-                        <p>correo= "adm@alura.com"; 
-                            </p>
-                        <input type="email" placeholder="Escriba su correo electrónico" data-correo required>
-                        <p>clave = "Alura1234";</p>
-                        <input  type="passward" placeholder="Escribe su contraseña" data-contraseña required>
-                        <button class="entrar btn" type="button" class="entrar" data-login >Entrar</button>
+                <section class="contCard" >
+                    <form class="body-car opacity0" data-form data-logueo>
+                        <div class =div-logo>
+                            <img src="../imagenes/logueo.png" >
+                        </div>
+                        <div id="contenedorForm"  >
+                            <div id="divEmail"  >
+                                <h3>Iniciar Sesión</h3>
+                                <div id="alertEmailLogin" style="display:none;"></div>
+                                <input type="email" placeholder="correo electrónico" data-correo required>
+                                <button class="entrar btn" type="button" id="btnNextPass"  >Siguiente</button>
+    
+                            </div>
+                            <div id="divPassword">
+                                <div class="divEmailUser">
+                                    <p><button type="button" id="btnPrev" ><i class="fa-solid fa-arrow-left-long"></i></button><span id="spanEmail"></span></p>
+                                </div>
+                                <h3>Contraseña</h3>
+                                <div id="alertPass" ></div>
+                                <input  type=password placeholder="contraseña" data-contraseña required>
+                                <button class="entrar btn" type="button" class="entrar" data-login >Iniciar Sesión</button>
+    
+    
+    
+    
+                            </div>
+
+                        </div>
+                        
+                        
+                        
+                       
+                         
                     </form>
 
                 </section>
@@ -105,12 +129,14 @@
             </section>
 
         </footer>
+        <script src="https://kit.fontawesome.com/7fda2717d4.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script type="text/javascript" src="../javascript/visual.js"></script>
-        <script type="module" src="../controlladores/productos.js"></script>
+        
         <script type="text/javascript" src="../javascript/login.js"></script>
         
        
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
 
     
 </body>

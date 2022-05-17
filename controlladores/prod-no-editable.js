@@ -11,7 +11,7 @@ const mostrarProducto= (nombre, precio, id,  imagen) =>{
                            <img class="prodImagen" src="${imagen}">
                             <p class="nomprod">${nombre}</p>
                             <p class="precioprod">${precio}</p>
-                            <a class="linkprod" href="./pantallas/detalleproducto.html?id=${id}">Ver Producto</a>`;
+                            <a class="linkprod" href="/pantallas/detalleproducto.html?id=${id}">Ver Producto</a>`;
                          
     unProducto.innerHTML= contenidoProducto;
     

@@ -1,53 +1,152 @@
-.login{
+.contCard{
     padding: 5rem 1rem;
     width: 100vw;
     
-    background: #f5f5f5;
+    
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.body-car{
+    width: 90vw;
+    height: 60vh;
+    max-width: 500px;
+    max-height: 600px;
+    margin: 2rem;
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 1;
+}
+.div-logo{
+    padding:.3rem 0;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.div-logo img{
+    
+    width: 100px;
+    height: 100px;
+    
+    object-fit: cover;
+
+}
+#contenedorForm{
+    position: relative;
+}
+#contenedorForm > div{
+        position: absolute;
+        top:0;
+        left: 100%;
+        padding: 0 5rem;
+        width: 100%;
+        transition: .4s all;
+
+}
+  
+
+#divEmail, #divPassword{
+    
+    
+    
+    margin: .3rem 0;
+   
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     box-sizing: border-box;
+      
+    
 
 }
+#alertEmailLogin {
+    font-size: 1rem;
+    width: 100vw;
+}
 
-    .login h3{
-        font-size: 2rem;
-        margin-top: 4rem;
+    .contCard h3{
+        font-size: 1.6rem;
         line-height: 1.2rem;
+        padding-bottom: 3rem;
         font-weight: 700;
         color: #464646;
     }
-    .login input{
-        color:#a2a2a2;
+    .contCard input{
+        
         font-family: 'Raleway';
         font-size: 1rem;
         font-weight: 400;
         line-height: 1.2rem;
-        height: .2vh;
-        border-radius: 4px;
+        width: 100%;
         border: transparent;
-        width: calc(70vw - 2rem);
-        margin:0.6rem 0;
-        padding:1.3rem 0 1.3rem 0.7rem;
+        
+        margin:0.6rem 2rem;
+        padding:.2rem 0  .2rem 0;
+        border:0;
         box-sizing: border-box;
+        border-bottom: 1px solid rgba(0,0,0, .6);
+        outline: none;
+       
+        
 
     }
     
     .entrar{
         
         width: 30vw;
+        max-width: 260px;
         margin-top: .7rem;
-        font-weight: 600;
         
-        
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+    .divEmailUser{
+        margin-bottom: 2rem;
+
 
     }
+    #btnPrev{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border:0;
+        cursor:pointer;
+        background-color: transparent;
+        margin-right: .5rem;
+
+    }
+    #btnPrev i{
+        color: #a2a2a2;
+
+    }
+    #btnPrev:hover{
+        background-color: #e3e3e3;
+    }
+    #spanEmail{
+        font-size: 1.2rem;
+    }
+
+ .layoutActive{
+     left:0 !important;
+ }  
+ .layoutleft{
+     left:-100%  !important;
+ }
+ .layoutright{
+     left: 100% !important;
+ }
+
 
 
 @media screen and (min-width:768px){
-    .login input{
-        width: calc(50vw - 2rem);
+    .contCard input{
+        max-width: 400px;
     }
     
 
@@ -56,17 +155,14 @@
 
 @media screen and (min-width:1440px){
     
-    .login{
+    .contCard{
         padding: 5rem 1rem 10rem 1rem;
 
     }
     
     
     
-    .login input{
-        width: calc(40vw - 2rem);
-        height: 8vh;
-    }
+    
     
 
 

@@ -11,7 +11,7 @@ const admProductos = (nombre, imagen, precio,id ) =>{
                     <div class="imagenprod">
                         <img class="prodImagen"src="${imagen}">
                         <div class="iconProd">
-                                <a href="#"><img class="eliminar"src="../imagenes/eliminar.png"></a>
+                                <a href="/pantallas/eliminarProducto.html?id=${id}"><img class="eliminar"src="../imagenes/eliminar.png"></a>
                                 <a href="/pantallas/modificarProducto.html?id=${id}"><img class="modificar" src="../imagenes/modificar.png"></a>
                         </div>                           
                     </div>
