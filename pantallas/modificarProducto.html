@@ -53,47 +53,58 @@
             <section class="contenedor">
                 
                 <h1> Editar Producto</h1>
-                <div class="agregar-movil">
-                    <a href="#"><img class="img-movil" src="../imagenes/agregar-movil.png"></a> 
-                    <p class="textoMovil-agregar">Agregar una imagen para el producto</p>
-                </div>
-                    
-                <div class="seccionImagen oculto">
+                
+                <div class="seccionImagen">
                     <div class="imagen-blanco">
-                        <div class="agregar-tablet">
-                            <img class="img"src="../imagenes/agregar-prod.png" alt="imagen agregar">
-                            <p class="desc-agregar">Arrastre para agregar una imagen para el producto </p>
-
-                        </div>
-                       
+                        <div class="agregar-tablet" data-imagen-prod>
+                            
+                            
+                        </div>                    
                         <img src="../imagenes/O.png" >
-                        <a class="link-agregar" href="#">Busque en su computador</a>
-        
-                    </div>
-                    
-
-
+                        <a class="link-agregar" href="#">Busque en su computador</a>        
+                    </div>          
                 </div>
-                        
-
-                <form class="formAgregar">
+                <form class="formAgregar" data-formulario>
                     <div class="input">
-                        <input class="inputdoble inputablet" type="text" placeholder="Producto XXY" >
+                        <input 
+                        class="inputdoble inputablet" 
+                        type="text" 
+                        required 
+                        placeholder="" 
+                        data-nombre-prod
+
+                        >
                         <div class="textodob">
                             <p>Nombre del producto</p>
 
                         </div>
-
+                        <span id="spanNombre"></span>
+                        
                     </div>
                     <div class="input">
-                        <input class="inputdoble inputablet" type="text" placeholder="$60,00" >
+                        <input 
+                        class="inputdoble inputablet" 
+                        type="text" 
+                        required 
+                        placeholder="" 
+                        data-precio-prod 
+
+                        >
                         <div class="textodob">
                             <p>Precio del producto</p>
-
                         </div>
-
+                        <span id="spanPrecio"><p >Solo admite Numeros</p></span>
                     </div>
-                    <textarea class="descprod"  id="mensaje" placeholder="Descripcion del producto" required></textarea>
+                    <div class="cont-categorias">
+                        <p>Categoria</p>
+                        <select class="selec-cat" data-cat-prod>
+                            <option>Elige una Categoria</option> 
+                            <option>starwars</option>
+                            <option>consolas</option>
+                            <option>diversos</option>
+                        </select>
+                    </div>
+                    <textarea class="descprod"  id="mensaje"  placeholder="Descripcion del producto" required data-desc-prod></textarea>
                     
                     <input type="submit" value ="Editar Producto" class="agregar btn">
 
@@ -145,6 +156,7 @@
             </section>
 
         </footer>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="../javascript/visual.js"></script>
         <script type="module" src="../controlladores/modificar-producto.js"></script>
         

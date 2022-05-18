@@ -7,12 +7,29 @@ const detalleProducto = async(id) =>{
     return fetch(`https://ecommerce-alura-geek.herokuapp.com/productos/${id}`).then(respuesta => respuesta.json());
 }
 
+const eliminarProducto = (id)=>{
+    console.log("eliminar a =>", id)
+    return fetch(`https://ecommerce-alura-geek.herokuapp.com/productos/${id}`,{
+        method:"DELETE",
+    });
+};
 
+const actualizarProducto = (nombre, precio, imagen, id, categoria, descripcion) => {
+    return fetch(`https://ecommerce-alura-geek.herokuapp.com/productos/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({nombre, precio, imagen, categoria, descripcion})
+    }).then(respuesta => respuesta).catch(error => console.log(error));
+  };
 
 
 export const datos ={
     listaProducto,
     detalleProducto,
+    eliminarProducto,
+    actualizarProducto
 
 }
 

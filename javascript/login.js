@@ -32,6 +32,7 @@ document.querySelector("#btnNextPass").onclick = function(){
             text: "El correo es adm@alura.com",
             icon: "error",
                    })
+        
 
     }else {
         alertEmailLogin.style.display="none";
@@ -106,7 +107,7 @@ document.querySelector("[data-correo]").onkeyup = function(){
         
 
     }
-    correo.reset()
+   
 
 
 
