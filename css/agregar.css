@@ -18,44 +18,38 @@
         text-align: left;
         font-weight: 700;
         font-size: 1.7rem;
-        padding: 2rem;
+        width: 100%;
+        padding: 1rem;
         line-height: 1.7rem;
         color:#464646;
 
         
         
     }
-    
-        .agregar-movil{
-            width: 100%;
-            height: 20vh;
-        
-            background: #ffffff ;
-            
-            margin:8px 0;
-            padding:2rem;
-            gap:1rem;
-            border: 1px dashed #C8C8C8;
-            box-sizing: border-box;
 
-            
-            
-        }
+    .agregar-img{
+        background: #FFFFFF;
+        border: 1px dashed #C8C8C8;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        width: calc(90vw - 2rem);
+        height: 200px;
+        margin:2rem;
+
+        box-sizing: border-box;
+    }
+    
             
             
             .oculto{
                 display:none;
             }
-            .textoMovil-agregar{
-                
-                font-size: .8rem;
-                line-height: 1.2rem;
-                font-weight: 400;
-                align-items: center;
-                color:#6b6b6b;
-                margin:1rem 0;
-
-            }
+            
 
 .formAgregar{
 
@@ -134,7 +128,7 @@
         line-height: 1.3;
         padding: .4em 1.4em .3em .8em;
         width: 100%;
-        max-width: 100%; 
+        max-width: 100vw; 
         box-sizing: border-box;
         margin: 0 auto 2.5rem auto;
         border: 1px solid #aaa;
@@ -160,6 +154,7 @@
       }
       .selec-cat option {
         font-weight:normal;
+        max-width: 500px;
       }
 
     .agregar{
@@ -194,6 +189,7 @@
         font-weight: 400;
         color: #2a7ae4;
         border: 1px solid #2A7AE4;
+        width: 80vw;
         padding:1rem;
         box-sizing: border-box;
         margin:0 .7rem;
@@ -216,13 +212,7 @@
         .contenedor h1{
             font-size: 3rem;
         }
-        .agregar-tablet{
-            background: #FFFFFF;
-            border: 1px dashed #C8C8C8;
-            padding: 2rem;
-            text-align: center;
-            box-sizing: border-box;
-        }
+       
 
         
         .imagen-blanco{
@@ -267,7 +257,11 @@
         .contenedor{
             align-items: center;
             
-            text-align: left;
+            
+
+        }
+        .contenedor h1{
+            text-align: center;
 
         }
         

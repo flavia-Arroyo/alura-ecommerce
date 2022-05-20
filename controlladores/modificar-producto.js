@@ -15,6 +15,7 @@ import { datos } from "../home.js"
       }
     
       const nombre = document.querySelector("[data-nombre-prod]");
+      console.log(nombre)
 
       const precio = document.querySelector("[data-precio-prod]");
       const categoria = document.querySelector("[data-cat-prod]");
@@ -28,13 +29,14 @@ import { datos } from "../home.js"
         console.log(producto);
         if(producto.nombre && producto.precio && producto.descripcion && producto.imagen && producto.categoria  ){
           nombre.value = producto.nombre;
+          console.log(nombre.value, producto.nombre)
           precio.value = producto.precio;
           categoria.value = producto.categoria;
           descripcion.value = producto.descripcion;
           
           imagen = producto.imagen;
     
-          let imgTag = `<<img class="img" src="${producto.imagen}" alt="imagen agregar">`;
+          let imgTag = `<img class="img" src="${producto.imagen}" alt="imagen agregar">`;
           zonaImg.innerHTML = imgTag;
           
           
