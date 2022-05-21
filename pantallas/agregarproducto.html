@@ -50,49 +50,36 @@
         
             
         <main>
-            <section class="contenedor">
-                
+            <section class="contenedor">                
                 <h1>Agregar nuevo producto</h1>
-                <!-- <div class="agregar-movil">
-                    <a href="#"><img class="img-movil" src="../imagenes/agregar-movil.png"></a> 
-                    <p class="textoMovil-agregar">Agregar una imagen para el producto</p>
-                </div> -->
-                    
-                <!-- <div class="seccionImagen oculto"> -->
-                    <div class="imagen-blanco">
-                        <div class="agregar-img">
-                            <img class="img oculto"src="../imagenes/agregar-prod.png" alt="imagen agregar">
+                <div class="imagen-blanco">
+                        <div class="agregar-img" data-imagen-prod required>
+                            <img class="img-tablet oculto"src="../imagenes/agregar-prod.png" alt="imagen agregar">
                             <img class="img-movil" src="../imagenes/agregar-movil.png"> 
-                            <p class="desc-agregar">Arrastre para agregar una imagen para el producto </p>
+                            <p class="desc-agregar">    
+                                Arrastre para agregar una imagen para el producto
+                            </p>
 
                         </div>
                        
                         <img   src="../imagenes/O.png" >
-                        <a class="link-agregar" href="#">Busque en su computador</a>
+                        <button data-boton class="link-agregar" >Busque en su computador</button>
+                        <input class="ocultoFile" type="file"  >
         
-                    <!-- </div> -->
-                    
+                </div>                 
 
-
-                </div>
-                        
-
-                <form class="formAgregar">
+                <form class="formAgregar" data-formulario>
                     <div class="input">
-                        <input class="inputdoble inputablet" type="text" placeholder="Producto XXY" >
+                        <input class="inputdoble inputablet" type="text" placeholder="Producto XXY"  required data-nombre-prod>
                         <div class="textodob">
                             <p>Nombre del producto</p>
-
                         </div>
-
                     </div>
                     <div class="input">
-                        <input class="inputdoble inputablet" type="text" placeholder="$60,00" >
-                        <div class="textodob">
+                        <input data-precio-prod required class="inputdoble inputablet" type="text" placeholder="$60,00" >
+                        <div class="textodob"   >
                             <p>Precio del producto</p>
-
                         </div>
-
                     </div>
                     <div class="cont-categorias">
                         <p>Categoria</p>
@@ -103,7 +90,7 @@
                             <option>diversos</option>
                         </select>
                     </div>
-                    <textarea class="descprod"  id="mensaje" placeholder="Descripcion del producto" required></textarea>
+                    <textarea class="descprod"  id="mensaje" placeholder="Descripcion del producto" required  data-desc-prod></textarea>
                     
                     <input type="submit" value ="Agregar producto" class="agregar btn">
 
@@ -155,7 +142,10 @@
             </section>
 
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="../javascript/visual.js"></script>
+        <script type="text/javascript" src="../javascript/agregar-imagen.js"></script>
         <script type="module" src="../controlladores/agregar-producto.js"></script>
         
     </body>

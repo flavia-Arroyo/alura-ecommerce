@@ -24,12 +24,23 @@ const actualizarProducto = (nombre, precio, imagen, id, categoria, descripcion) 
     }).then(respuesta => respuesta).catch(error => console.log(error));
   };
 
+  const crearProducto = (nombre, precio, imagen,  categoria, descripcion) => {
+        return fetch(`https://ecommerce-alura-geek.herokuapp.com/productos`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({id: uuid.v4(),nombre, precio, imagen,descripcion, categoria})
+    })
+  };
+
 
 export const datos ={
     listaProducto,
     detalleProducto,
     eliminarProducto,
-    actualizarProducto
+    actualizarProducto,
+    crearProducto
 
 }
 
