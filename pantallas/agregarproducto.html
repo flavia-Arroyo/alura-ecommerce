@@ -59,6 +59,7 @@
                             <p class="desc-agregar">    
                                 Arrastre para agregar una imagen para el producto
                             </p>
+                            <span class="mensajeError">Debe Existir Imagen para crear el producto</span>
 
                         </div>
                        
@@ -70,27 +71,40 @@
 
                 <form class="formAgregar" data-formulario>
                     <div class="input">
-                        <input class="inputdoble inputablet" type="text" placeholder="Producto XXY"  required data-nombre-prod>
+                        <input class="inputdoble inputs" type="text" placeholder="Ejemplo:Producto XXY"  required data-nombre-prod data-tipo="nombre" pattern ="^[A-Za-z]+$">
+                        <span class="input-message-error"></span>
                         <div class="textodob">
                             <p>Nombre del producto</p>
                         </div>
+                       
                     </div>
+                    
                     <div class="input">
-                        <input data-precio-prod required class="inputdoble inputablet" type="text" placeholder="$60,00" >
+                        <input data-precio-prod required class="inputdoble inputs" type="text" placeholder="Ejemplo:$60.00" pattern ="^(\$\d{0,8})(\.\d{1,2})?$"data-tipo="precio" >
+                        <span class="input-message-error"></span>
                         <div class="textodob"   >
                             <p>Precio del producto</p>
                         </div>
                     </div>
                     <div class="cont-categorias">
                         <p>Categoria</p>
-                        <select class="selec-cat" data-cat-prod>
+                        <select class="selec-cat" data-cat-prod data-tipo="categoria" required>
                             <option>Elige una Categoria</opcion>
                             <option>starwars</option>
                             <option>consolas</option>
                             <option>diversos</option>
+                            <span class="input-message-error"></span>
                         </select>
                     </div>
-                    <textarea class="descprod"  id="mensaje" placeholder="Descripcion del producto" required  data-desc-prod></textarea>
+                  
+                  
+                    <div class="conteinerArea">
+                        <textarea class="descprod inputs" data-desc-prod id="mensaje" placeholder="Descripcion del producto" maxlength="120" required  
+                         data-tipo = "descripcion"></textarea>  
+                        <span class="input-message-error"></span>                   
+                        
+                    </div>
+                    
                     
                     <input type="submit" value ="Agregar producto" class="agregar btn">
 
@@ -125,11 +139,19 @@
                 <form class="form">
                     <h3>Hable con nosotros</h3>
                     <div class="input forminput">
-                        <input class="inputdoble"type="text" placeholder="André Lisboa" maxlength="40" required >
+                        <input class="inputdoble inputs"type="text" placeholder="André Lisboa"  maxlength="20"   required data-tipo="nombre"  pattern ="^[A-Za-z]+$"><span class="input-message-error"></span>
+                        
                         <p class="textodob">Nombre</p>
-        
+                        
                     </div>
-                    <textarea class="desc" type="text" placeholder="Escribe tu mensaje" maxlength="120" required></textarea>
+                    <div class="conteinerArea">
+                        <textarea class="desc inputs" type="text" placeholder="Escribe tu mensaje" maxlength="120" data-texarea required data-tipo="mensaje" 
+                        ></textarea> 
+                        <span class="input-message-error"></span>                   
+                        
+                    </div>
+                   
+                    
                     <input type="submit" value ="Enviar Mensaje" class="enviar btn">
         
                 </form>
@@ -146,7 +168,9 @@
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script type="text/javascript" src="../javascript/visual.js"></script>
         <script type="text/javascript" src="../javascript/agregar-imagen.js"></script>
+        <script type="module" src="../javascript/validacion-formularios/app.js"></script>
         <script type="module" src="../controlladores/agregar-producto.js"></script>
+        <script type="module" src="../javascript/validacion-formularios/app.js"></script>
         
     </body>
 

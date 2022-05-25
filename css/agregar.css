@@ -76,6 +76,8 @@
     width: calc(100vw - 2rem);
     box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    text-align: left;
     outline: none;
 }
     .inputdoble{
@@ -121,9 +123,12 @@
         line-height: 20px; 
         left: calc(50% - 328px/2);
         outline: none;
+        margin-bottom: 1rem;
 
 
     }
+   
+
     .cont-categorias{
         position: relative;
     }
@@ -214,6 +219,34 @@
     .ocultoFile{
         display: none;
     }
+   
+    
+     .input-message-error {
+        display: none;
+        
+    } 
+    .input-container--invalid {
+        margin-bottom: 0.5rem;
+      }
+    
+  .input-message-error {
+    color: rgb(244, 13, 13);;
+    display: block;
+    margin-top: -1rem;
+    margin-bottom: .5rem;
+    padding-left: 0.5rem;
+  }
+  .input-container--invalid .inputdoble,.input-container--invalid .descprod,.input-container--invalid .desc{
+      border:.1rem solid rgb(244, 133, 133);
+      border-radius: .3rem;
+  }
+
+
+
+  .mensajeError{
+    color: rgb(244, 13, 13);;
+  }
+
 
 
 
@@ -263,10 +296,10 @@
             margin:0 .7rem;
 
         }
-        .inputablet{
+        /* .inputablet{
             width: calc(100vw - 2rem);
 
-        }
+        } */
         
     }
 
@@ -288,7 +321,7 @@
             max-width: 900px;
             
         }
-        .input ,.inputablet, .descprod, .agregar{
+        .input , .descprod, .agregar{
             max-width: 900px;
             
 

@@ -1,17 +1,18 @@
-const agregarImagen = document.querySelector(".agregar-img");
-console.log(agregarImagen)
+const agregarImagen = document.querySelector("[data-imagen-prod]");
+
 let textoImagen= ""
 
 let archivo;
+let imgagtag;
 
 textoImagen = agregarImagen.querySelector(".desc-agregar");
 
 //cuando hace click en buscar en dispositivo
 const buscador= document.querySelector(".imagen-blanco")
 const button=buscador.querySelector("button")
-console.log(buscador)
+
 let input=buscador.querySelector("input")
-console.log(input)
+
 
 button.onclick=()=>{
     input.click()
@@ -46,20 +47,24 @@ agregarImagen.addEventListener("drop", (event) =>{
 
 const mostrarArchivo= ()=>{
     let tipoArchivo = archivo.type;
+    console.log(tipoArchivo)
     let extensionValida = ["image/jpeg", "image/jpg", "image/png"]
     if(extensionValida.includes(tipoArchivo)){
         
         let lectorArchivo = new FileReader();
         lectorArchivo.onload = ()=>{
             let archURL= lectorArchivo.result;
-            console.log(archURL)
-            let imagTag=`<img class="img"src="${archURL}" alt="">` 
-            console.log(imagTag)
+           
+            let imagTag=`<img class="img"src="${archURL}" alt="" required title="Es requerido una imagen para agregar un producto">` 
+            
             agregarImagen.innerHTML= imagTag
+            
         }
         lectorArchivo.readAsDataURL(archivo)
 
-    }else{        
+    }else {
+        
+        
         Swal.fire({
             position: 'center',
             icon: 'error',

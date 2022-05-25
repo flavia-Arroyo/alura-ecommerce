@@ -45,7 +45,7 @@ document.querySelector("#btnNextPass").onclick = function(){
 
     
 
-}
+ }
 
 
 //regresar 
@@ -84,38 +84,40 @@ function validarEmail(email){
     const stringEmail = new RegExp(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/);
     if(stringEmail.test(email) == false){
         return false;
+    }else if (stringEmail== ""){
+        return false;
     }else{
-        return true;
+        return true
     }
 }
 
-// valida mientras escribe
+// // valida mientras escribe
 
-document.querySelector("[data-correo]").onkeyup = function(){
-    const correo = document.querySelector("[data-correo]").value;
-    const alertEmailLogin= document.querySelector("#alertEmailLogin")
-    const emailValidar = validarEmail(correo);
+// document.querySelector("[data-correo]").onkeyup = function(){
+//     const correo = document.querySelector("[data-correo]").value;
+//     const alertEmailLogin= document.querySelector("#alertEmailLogin")
+//     const emailValidar = validarEmail(correo);
 
-    if(!emailValidar){
-        alertEmailLogin.innerHTML ='<p style="color:red;">Escribe una direccion de correo electrónico</p>';
-        alertEmailLogin.style.display="block";
+//     if(!emailValidar){
+//       
+//         alertEmailLogin.style.display="block";
         
 
-    }else{
-        alertEmailLogin.style.display="none";
+//     }else{
+//         alertEmailLogin.style.display="none";
         
         
 
-    }
+//     }
    
 
 
 
-}
+// }
 
 
 document.querySelector("[data-login]").onclick = function(){
-    
+    const passstring = document.querySelector("[data-contraseña ]")
     const correo = document.querySelector("[data-correo]").value;
     const strPass = document.querySelector("[data-contraseña ]").value;
     const alertPass = document.querySelector("#alertPass");
@@ -143,6 +145,8 @@ document.querySelector("[data-login]").onclick = function(){
     }
     else{
         alertPass.style.display ="none";
+        spanEmail.innerHTML= "";
+        
         swal({
             
                          text: " Debe Usar correo:adm@alura.com clave:Alura1234",
@@ -150,9 +154,10 @@ document.querySelector("[data-login]").onclick = function(){
                         
                         
                 })
+                passstring.innerHTML="";
 
     }
-    strPass.reset();
+   
 
 }
 

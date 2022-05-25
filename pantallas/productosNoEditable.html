@@ -101,13 +101,17 @@
                 <form class="form">
                     <h3>Hable con nosotros</h3>
                     <div class="input forminput">
-                        <input class="inputdoble"type="text" placeholder="André Lisboa" maxlength="40" required >
+                        <input class="inputdoble inputs"type="text" placeholder="André Lisboa"  maxlength="20"   required data-tipo="nombre"  pattern ="^[A-Za-z]+$"><span class="input-message-error"></span>
+                        
                         <p class="textodob">Nombre</p>
-        
+                        
                     </div>
-                    <textarea class="desc" type="text" placeholder="Escribe tu mensaje" maxlength="120" required></textarea>
-                    <input type="submit" value ="Enviar Mensaje" class="enviar btn">
-        
+                    <div class="conteinerArea">
+                        <textarea class="desc inputs" type="text" placeholder="Escribe tu mensaje" maxlength="120" data-texarea required data-tipo="mensaje" 
+                        ></textarea> 
+                        <span class="input-message-error"></span>                   
+                        
+                    </div>
                 </form>
         
         
@@ -121,6 +125,7 @@
         
         <script type="text/javascript" src="javascript/visual.js"></script>
         <script type="module" src="../controlladores/prod-no-editable.js"></script>
+        <script type="module" src="../javascript/validacion-formularios/app.js"></script>
         <script type="module" src="../controlladores/detalle-producto.js"></script>
         
         
