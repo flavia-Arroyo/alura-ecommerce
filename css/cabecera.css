@@ -60,6 +60,7 @@
         .buscador{
             display: none;
             margin:1rem;
+           
         } 
         .text-input{
             font-family: 'Raleway';
@@ -72,7 +73,7 @@
             background: #f5f5f5;
             padding: 1rem 2rem;
             
-            width: 100%;
+            width: 80%;
             max-width: 393px;
             box-sizing: border-box;
         }
