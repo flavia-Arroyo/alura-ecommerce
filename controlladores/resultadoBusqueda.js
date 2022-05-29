@@ -1,7 +1,7 @@
 const nombreBuscado = document.querySelector("[data-buscador]")
 const btnmovil = document.querySelector("[data-boton-movil]")
 const nomBuscadoMovil = document.querySelector("[data-buscador-movil]")
-console.log(nomBuscadoMovil)
+
     
     
 let texto = ""
@@ -25,10 +25,10 @@ nombreBuscado.addEventListener("input", evento => {
 
 nomBuscadoMovil.addEventListener("input", event =>{
     const textoMovil = event.target.value.toLowerCase();
-    console.log(textoMovil)
+   
     
     btnmovil.addEventListener("click", ()=>{
-        console.log(textoMovil)
+       
         window.location.href = `../pantallas/resultadobusqueda.html?texto=${textoMovil}`;
         nombreBuscado.value="";
         })
