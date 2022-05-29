@@ -232,7 +232,7 @@
   .input-message-error {
     color: rgb(244, 13, 13);;
     display: block;
-    margin-top: -1rem;
+    margin-top: .6rem;
     margin-bottom: .5rem;
     padding-left: 0.5rem;
   }
