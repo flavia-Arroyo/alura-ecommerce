@@ -35,12 +35,15 @@ const actualizarProducto = (nombre, precio, imagen, id, categoria, descripcion) 
   };
 
 
+
+
 export const datos ={
     listaProducto,
     detalleProducto,
     eliminarProducto,
     actualizarProducto,
-    crearProducto
+    crearProducto,
+   
 
 }
 

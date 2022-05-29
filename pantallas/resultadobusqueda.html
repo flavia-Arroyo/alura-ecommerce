@@ -16,14 +16,14 @@
     <link href="../css/productos.css" rel="stylesheet" />
     <link href="../css/contacto.css" rel="stylesheet" />
     <link href="../css/footer.css" rel="stylesheet" />
-
+    <link href="../css/todoproducto.css" rel="stylesheet" />
 </head>
 <body>
     <header class="cabecera">
         <div class="header__cabecera">
             <div class="header-logo">
                 <a  href="../index.html"><img class="cabecera-logo" src="../imagenes/img-header/Logo.png" alt="logo"></a>
-                <input  data-buscador class="text-input" type="text"placeholder="¿Que deseas buscar?">
+                <input  data-buscador class="text-input" data-buscador type="text"placeholder="¿Que deseas buscar?">
                 
             </div>
 
@@ -39,7 +39,7 @@
             </div>          
             
             <div class="buscador"> 
-                <input   data-buscador class="text-input" type="text"placeholder="¿Que deseas buscar?">               
+                <input  data-buscador class="text-input" data-buscador type="text"placeholder="¿Que deseas buscar?">               
                                 
             </div>   
             
@@ -47,23 +47,24 @@
         </div>
     </header>
     
-    <main>
-        <section class="prod-seleccionado" data-prod-seleccionado >
-            
-
-        </section>
-
+    <main>      
+        <section class="todoproducto">
+            <div class="encabezado" data-titulo-busqueda>
+                <h2></h2>
+               
+                
+            </div>
+            <section class="todos__productos" >
+                <div class="producto-mod" data-busqueda-prod>
+                </div>
+                   
+                    
+                   
+            </section>
         
-        <div class="prod-sel-similares">
-            <h2>Productos Similares</h2>
-                            
-        </div>
-        <section class="productos" data-producto-similares>
+    
             
-            
-            
-        </div>
-
+    
         </section>
 
 
@@ -121,8 +122,9 @@
     <script type="text/javascript" src="../javascript/visual.js"></script>
     <script type="module" src="../javascript/validacion-formularios/app.js"></script>
     <script type="module" src="../controlladores/detalle-producto.js"></script>
-    <script type="module" src="../controlladores/buscador-producto.js"></script>
     <script src="../controlladores/resultadoBusqueda.js"></script>
+    <script type="module" src="../controlladores/buscador-producto.js"></script>
+   
 </body>
 
 </html>

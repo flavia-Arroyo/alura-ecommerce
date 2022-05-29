@@ -1,9 +1,5 @@
-import { datos } from "../home.js";
-
-const seccionProd = document.querySelector("[data-productos]")
-
-
-const mostrarProducto= (nombre, precio, id,  imagen) =>{
+ 
+export const mostrarProducto= (nombre, precio, id,  imagen) =>{
     
     const unProducto= document.createElement("div");
     unProducto.classList.add("producto")
@@ -18,12 +14,3 @@ const mostrarProducto= (nombre, precio, id,  imagen) =>{
     return unProducto;
     
 };
-datos.listaProducto().then(informacion =>{
-    informacion.forEach(({nombre, precio, id,  imagen}) => {
-        const nuevoProducto = mostrarProducto(nombre, precio, id, imagen)
-        seccionProd.appendChild(nuevoProducto)
-
-
-    })
-})
-
