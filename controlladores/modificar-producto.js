@@ -1,8 +1,5 @@
 import { datos } from "../home.js"
-  // const contImagen =`
-    // <img class="img" src="${producto.imagen}" alt="imagen agregar">
-    // `;
-    // imagen.innerHTML = contImagen
+  
 
 
     let id,imagen;

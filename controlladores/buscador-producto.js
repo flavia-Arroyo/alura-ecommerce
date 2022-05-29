@@ -11,7 +11,7 @@ const titulo = document.querySelector("[data-titulo-busqueda]")
 const mostrarEncontrados = async()=>{
     const url = new URL(window.location);
     const nombreProd = url.searchParams.get("texto")
-    console.log(nombreProd)
+    
     if (nombreProd == null){
         console.log("hubo error al buscar")
     }
@@ -30,7 +30,7 @@ const mostrarEncontrados = async()=>{
 
             if(validar || validarCat){
                 const resultados = mostrarProducto(nombre, precio, id,  imagen)
-                console.log(resultados)
+                
                 datosProd.appendChild(resultados)
                 cantEncontrados ++;
             }
@@ -38,21 +38,21 @@ const mostrarEncontrados = async()=>{
         })
 
         if(cantEncontrados > 0){
-            console.log(cantEncontrados)
+            
             const informe = `<h2>Resultado Busqueda para => ${nombreBuscado}</h2>`
             titulo.innerHTML = informe
 
         }
 
         if(cantEncontrados == 0){
-            console.log(cantEncontrados)
+         
 
             const informe = `<img src="../imagenes/advertencia.jpg" >
                     <h2>Lo sentimos No existen productos para => ${nombreBuscado}</h2>`;
 
-                    console.log(informe)
+                   
             titulo.innerHTML = informe
-            console.log(titulo.innerHTML)
+            
 
         }
     })
