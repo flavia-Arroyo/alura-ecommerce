@@ -26,7 +26,7 @@ const mostrarEncontrados = async()=>{
             const nomCat = categoria.toLowerCase();
             const validar = nomProd.includes(nombreBuscado)
             const validarCat = nomCat.includes(nombreBuscado)
-            console.log(nomProd, nomCat)
+            
 
             if(validar || validarCat){
                 const resultados = mostrarProducto(nombre, precio, id,  imagen)
