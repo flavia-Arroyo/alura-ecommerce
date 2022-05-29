@@ -30,7 +30,7 @@ nomBuscadoMovil.addEventListener("input", event =>{
     btnmovil.addEventListener("click", ()=>{
        
         window.location.href = `../pantallas/resultadobusqueda.html?texto=${textoMovil}`;
-        nombreBuscado.value="";
+        nombreBuscadoMovil.value="";
         })
 
 
