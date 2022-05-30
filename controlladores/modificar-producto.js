@@ -12,7 +12,7 @@ import { datos } from "../home.js"
       }
     
       const nombre = document.querySelector("[data-nombre-prod]");
-      console.log(nombre)
+    
 
       const precio = document.querySelector("[data-precio-prod]");
       const categoria = document.querySelector("[data-cat-prod]");
@@ -23,7 +23,7 @@ import { datos } from "../home.js"
       
       try{
         const producto = await datos.detalleProducto(id);
-        console.log(producto);
+       
         if(producto.nombre && producto.precio && producto.descripcion && producto.imagen && producto.categoria  ){
           nombre.value = producto.nombre;
           
@@ -37,7 +37,7 @@ import { datos } from "../home.js"
           zonaImg.innerHTML = imgTag;
           
           
-        //   zonaDrag.classList.add("active");
+       
         }
 
       }catch(error){
@@ -50,8 +50,7 @@ import { datos } from "../home.js"
     const formulario = document.querySelector("[data-formulario]");
     formulario.addEventListener("submit", evento => {
       evento.preventDefault();
-    
-      const zonaImg = document.querySelector("[data-imagen-prod]"),
+
       imagen = zonaImg.querySelector("img").src;
     
       const nombre = document.querySelector("[data-nombre-prod]").value;

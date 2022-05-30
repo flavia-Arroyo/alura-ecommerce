@@ -47,7 +47,7 @@ agregarImagen.addEventListener("drop", (event) =>{
 
 const mostrarArchivo= ()=>{
     let tipoArchivo = archivo.type;
-    console.log(tipoArchivo)
+   
     let extensionValida = ["image/jpeg", "image/jpg", "image/png"]
     if(extensionValida.includes(tipoArchivo)){
         
