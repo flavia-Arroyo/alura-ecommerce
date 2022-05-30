@@ -91,29 +91,7 @@ function validarEmail(email){
     }
 }
 
-// // valida mientras escribe
 
-// document.querySelector("[data-correo]").onkeyup = function(){
-//     const correo = document.querySelector("[data-correo]").value;
-//     const alertEmailLogin= document.querySelector("#alertEmailLogin")
-//     const emailValidar = validarEmail(correo);
-
-//     if(!emailValidar){
-//       
-//         alertEmailLogin.style.display="block";
-        
-
-//     }else{
-//         alertEmailLogin.style.display="none";
-        
-        
-
-//     }
-   
-
-
-
-// }
 
 
 document.querySelector("[data-login]").onclick = function(){

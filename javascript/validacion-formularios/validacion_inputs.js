@@ -59,14 +59,7 @@ const mensajeDeError={
         valueMissing:"Debe agregar descripcion para poder agregar producto",
        
     },
-    // email:{
-    //     valueMissing:"el campo email no puede estar vacio",
-        
-    // },
-    // password:{
-    //     valueMissing:"el campo password no puede estar vacio",
-        
-    // },
+    
     precio:{
         valueMissing:"Este campo no puede estar vacio",
         patternMismatch:"Debe empezar con $ y separar con punto (.) el numero entero de los decimales => ejemplo $60.00 "
