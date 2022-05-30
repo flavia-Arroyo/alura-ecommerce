@@ -3,6 +3,7 @@ import { datos } from "../home.js"
 
 
     let id,imagen;
+    let zonaImg;
     const obtenerInfoProducto = async () => {
       const url = new URL(window.location);
       id = (url.searchParams.get("id"));
@@ -17,7 +18,7 @@ import { datos } from "../home.js"
       const precio = document.querySelector("[data-precio-prod]");
       const categoria = document.querySelector("[data-cat-prod]");
       const descripcion = document.querySelector("[data-desc-prod]");
-      const zonaImg = document.querySelector("[data-imagen-prod]");
+      zonaImg = document.querySelector("[data-imagen-prod]");
       
       
       
