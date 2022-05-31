@@ -49,6 +49,10 @@ const mensajeDeError={
         valueMissing:"el campo nombre no puede estar vacio",
         patternMismatch:"Solo se aceptan letras"
     },
+    nombreProducto:{
+        valueMissing:"el campo nombre no puede estar vacio",
+
+    },
     mensaje:{
         valueMissing:"el campo mensaje no puede estar vacio",
         

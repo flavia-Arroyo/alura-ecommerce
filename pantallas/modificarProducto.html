@@ -70,44 +70,55 @@
                 <form class="formAgregar" data-formulario>
                     <div class="input">
                         <input 
-                        class="inputdoble inputablet" 
+                        class="inputdoble inputs" 
                         type="text" 
                         required 
                         placeholder="" 
                         data-nombre-prod
+                        
+                        data-tipo="nombreProducto"
 
                         >
+                        <span class="input-message-error"></span>
                         <div class="textodob">
                             <p>Nombre del producto</p>
 
                         </div>
-                        <span id="spanNombre"></span>
+                        
                         
                     </div>
                     <div class="input">
                         <input 
-                        class="inputdoble inputablet" 
+                        class="inputdoble inputs" 
                         type="text" 
                         required 
                         placeholder="" 
                         data-precio-prod 
+                        pattern ="^(\$\d{0,8})(\.\d{1,2})?$"data-tipo="precio" >
 
-                        >
+                        <span class="input-message-error"></span>
                         <div class="textodob">
                             <p>Precio del producto</p>
                         </div>
-                        <!-- <span id="spanPrecio" ><p >Solo admite Numeros</p></span> -->
+                       
                     </div>
                     <div class="cont-categorias">
                         <p>Categoria</p>
-                        <select class="selec-cat" data-cat-prod>
+                        <select class="selec-cat" data-cat-prod data-tipo="categoria" required>
                             <option>Elige una Categoria</option> 
                             <option>starwars</option>
                             <option>consolas</option>
                             <option>diversos</option>
+                            <span class="input-message-error"></span>
                         </select>
                     </div>
-                    <textarea class="descprod"  id="mensaje"  placeholder="Descripcion del producto" required data-desc-prod></textarea>
+                    
+                    <div class="conteinerArea">
+                        <textarea class="descprod inputs" data-desc-prod id="mensaje" placeholder="Descripcion del producto"  required  
+                         data-tipo = "descripcion"></textarea>  
+                        <span class="input-message-error"></span>                   
+                        
+                    </div>
                     
                     <input type="submit" value ="Editar Producto" class="agregar btn">
 
@@ -170,6 +181,7 @@
         <script type="text/javascript" src="../javascript/agregar-imagen.js"></script>
         <script type="module" src="../controlladores/modificar-producto.js"></script>
         <script type="module" src="../controlladores/resultadoBusqueda.js"></script>
+        <script type="module" src="../javascript/validacion-formularios/app.js"></script>
         
     </body>
 

@@ -59,8 +59,17 @@ import { datos } from "../home.js"
       const categoria = document.querySelector("[data-cat-prod]").value;
       const descripcion = document.querySelector("[data-desc-prod]").value;
 
-      
-    
+      if(categoria == "Elige una Categoria"){
+        categoria == false
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'Debe elegir una categoria',
+            showConfirmButton: false,
+            timer: 1500
+        })
+
+    }else{
       datos.actualizarProducto(nombre, precio, imagen, id, categoria, descripcion).then(() => {
 
         Swal.fire({
@@ -75,7 +84,12 @@ import { datos } from "../home.js"
         }, 2000);
       })
     
-    })
+  }
+})
 
 
+
+  
+    
+     
     

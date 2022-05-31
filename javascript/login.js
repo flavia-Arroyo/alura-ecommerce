@@ -2,7 +2,7 @@ const opacidad = document.querySelector("[data-logueo]");
 opacidad.classList.remove("opacity0");
 opacidad.classList.add("opacity1")
 
-
+let correo;
 
 function layoutIni(){
     const divEmail = document.querySelector("#divEmail");
@@ -16,7 +16,7 @@ setTimeout(layoutIni, 1000);
 
 document.querySelector("#btnNextPass").onclick = function(){
     
-    const correo = document.querySelector("[data-correo]").value;
+    correo = document.querySelector("[data-correo]").value;
     
     const alertEmailLogin= document.querySelector("#alertEmailLogin")
     
@@ -25,7 +25,7 @@ document.querySelector("#btnNextPass").onclick = function(){
     const emailValidar = validarEmail(correo);
 
     if(!emailValidar){
-        alertEmailLogin.innerHTML ='<p style="color:red;">Escribe una direccion de correo electrónico</p>';
+        alertEmailLogin.innerHTML ='<p style="color:red;">Escribe una direccion de correo electrónico valida</p>';
         alertEmailLogin.style.display="block";
         swal({
             
@@ -96,7 +96,7 @@ function validarEmail(email){
 
 document.querySelector("[data-login]").onclick = function(){
     const passstring = document.querySelector("[data-contraseña ]")
-    const correo = document.querySelector("[data-correo]").value;
+    correo = document.querySelector("[data-correo]").value;
     const strPass = document.querySelector("[data-contraseña ]").value;
     const alertPass = document.querySelector("#alertPass");
     const correoAdm = "adm@alura.com"; 
@@ -118,12 +118,12 @@ document.querySelector("[data-login]").onclick = function(){
             
                        setTimeout(function(){
                           window.location.href = "../pantallas/productos.html";
-                       }, 3000)
+                       }, 1000)
 
     }
     else{
         alertPass.style.display ="none";
-        spanEmail.innerHTML= "";
+        
         
         swal({
             
